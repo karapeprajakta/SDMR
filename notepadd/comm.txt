@@ -40,3 +40,11 @@ COPY package.json /app
 RUN npm install
 COPY . /app
 CMD node server.js
+
+docker commands:
+sudo apt update
+git clone https://github.com/karapeprajakta/Practice.git
+sudo apt install docker.io
+sudo systemctl --type=service --state=running
+sudo docker build -t pss .
+Practice$ sudo docker run -d -p 8000:8000 pss
